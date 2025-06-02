@@ -1,4 +1,63 @@
-.titleFonts{
-    position: relative;
-    left: 50px;
-}
+  body{
+    background-color: #6e9970;
+    overflow: hidden;
+  }
+
+ .titleGraphicContainer{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+ }
+
+ .centralPark{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: auto;
+      background-image: url('centralParkGradient.png');
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+ }
+ 
+ .centralParkTitle{
+      font-size: 50px;
+      font-family: "Anton", sans-serif;
+      position: relative;
+      top: 5px;
+      left: 80px;
+  
+    }
+
+    .playButtonFont{
+      font-size: 150px;
+      font-family: "Anton", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+      position: relative;
+      top: 100px;
+      left: 300px;
+  
+    }
+
+    .instructionsTitleFont{
+      font-size:100px;
+      font-family: "Antonio", sans-serif;
+      font-family: "Antonio", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+      position: relative;
+      top: 100px;
+      left: 300px;
+    }
+
+    .testButton{
+      font-family: "Antonio", sans-serif;
+    }
