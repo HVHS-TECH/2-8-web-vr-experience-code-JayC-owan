@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>WEBVR</title>
+    <link href="game.css" rel="stylesheet" type="text.css" />
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <!--***************************MESH SCRIPT***************************************************-->
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script> 
+        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky color="../Game/sky.jpeg"></a-sky>
+          <!--***************************Buildings***************************************************-->
+<a-plane id="wall1"position="30.51981 14.37709 -3.79088" src="Game/building1.png" rotation="0 -90.00021045914971 0" scale="21.03762 34.12473 10" material="" geometry=""></a-plane>
+<a-plane id="wall2" position="30.50467 13.59691 -24.81796" src="Game/building2.png" rotation="0 -90 0" scale="21.1056 27.70642 10" material="" geometry=""></a-plane>
+<a-gltf-model id="tree1" src="Game/giant_low_poly_tree.glb" position="1 -1 6" scale="" gltf-model="Game/low_poly_tree.glb"></a-gltf-model>
+<a-plane id="tree2" position="2.60787 0.21069 -6.71566" rotation="-90 0 0" scale="55.12768 55.4365 10" color="green" material="" geometry=""></a-plane>  <a-gltf-model src="Game/giant_low_poly_tree.glb" position="1 -1 6" scale="" gltf-model="Game/giant_low_poly_tree.glb"></a-gltf-model>
+<a-gltf-model id="tree3" src="Game/giant_low_poly_tree.glb" position="1 -1 6" scale="" gltf-model="Game/low_poly_tree.glb"></a-gltf-model>
+<a-gltf-model id="tree4" src="Game/stylized_bush.glb" position="-12.49915 0.00953 -9.37821" scale="" gltf-model="Game/stylized_bush.glb"></a-gltf-model>
+<a-gltf-model id="tree5" src="Game/log.glb" position="-8.2267 0.48494 -4.48316" scale="" gltf-model="Game/log.glb"></a-gltf-model>
+    
+    </a-scene>
+</html>
