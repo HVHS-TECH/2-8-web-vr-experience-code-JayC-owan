@@ -4,22 +4,33 @@
     <meta name="viewport" content="width=device-width" />
     <title>WEBVR</title>
     <link href="game.css" rel="stylesheet" type="text.css" />
+        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-    <!--***************************NAVMESH SCRIPT***************************************************-->
+
+                                <!--NAVMESH SCRIPTS-->  
 <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
 
+                                    <!-- A-frame extras-->
+<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+ <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
 
-    <script src="https://rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script> 
-        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene physics="gravity:9.8; restitution:0.1" inspector-plugin-recast>
       <a-sky src="Game/sky.jpeg"></a-sky>
+
+                <!--***************************CAMERA RIG***************************************************-->
+          <a-entity id="rig" position="0 0 0" movement-controls="constrainToNavMesh: true;speed:0.5;">
+      <a-entity camera id="camera" position="0 3 0" look-controls
+        extended-wasd-controls="flyEnabled: true; turnEnabled: true; lookEnabled: true; maxLookAngle:60;">
+      </a-entity>
+    </a-entity>
+
         <!--***************************WORLD PLANE***************************************************-->
-<a-plane id="worldPlane" position="2.60787 0.21069 2.40593" rotation="-90 0 0" scale="109.7603 238.74555 10" color="green" material="" geometry=""></a-plane>
+<a-plane id="worldPlane" position="-0.72104 0.21069 2.40593" rotation="-90 0 0" scale="98.51479 238.74555 10" color="green" material="" geometry="" navmesh="" visible=""></a-plane>
           <!--***************************Buildings***************************************************-->
-                        <!---------------BUILDING ONE SIDE--------------->
-<a-entity id="buildingGroup1" position="17.973 0 0">
+                       
+<a-entity id="wallSide1" position="18.1">
 
 <a-entity id="wall4">
 <a-plane id="component1" position="30.51981 31.54272 -76.81983" src="Game/building_dock2.png" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
@@ -38,6 +49,7 @@
 </a-entity>
 
 </a-entity>
+
           
 <!--***************************Grouped Buildings as an entity***************************************************-->
 
