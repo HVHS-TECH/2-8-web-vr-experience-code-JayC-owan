@@ -11,70 +11,151 @@
   </head>
   <body>
     <a-scene>
-      <a-sky color="Game/sky.jpeg"></a-sky>
+      <a-sky src="Game/sky.jpeg"></a-sky>
         <!--***************************WORLD PLANE***************************************************-->
 <a-plane id="worldPlane" position="2.60787 0.21069 2.40593" rotation="-90 0 0" scale="109.7603 238.74555 10" color="green" material="" geometry=""></a-plane>
           <!--***************************Buildings***************************************************-->
-<a-plane id="wall1" position="30.51981 21.59174 -10.43437" src="Game/building1.png" rotation="0 -90 0" scale="40.30746 58.61684 10" material="" geometry=""></a-plane>
-<a-plane id="wall2" position="30.50467 19.99593 -44.8081" src="Game/building2.png" rotation="0 -90 0" scale="28.48481 39.71231 10" material="" geometry=""></a-plane>
-<a-plane id="wall3" position="30.50467 16.00164 37.58638" src="Game/building3.png" rotation="0 -90 0" scale="56.76725 32.34447 10" material="" geometry=""></a-plane>
-<!--***************************Grouped Buildings as an entity***************************************************-->
+                        <!---------------BUILDING ONE SIDE--------------->
+<a-entity id="buildingGroup1" position="17.973 0 0">
+
 <a-entity id="wall4">
 <a-plane id="component1" position="30.51981 31.54272 -76.81983" src="Game/building_dock2.png" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
 <a-plane id="component2" position="30.51981 52.24609 -76.85983" src="Game/building_dock2.png" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
 <a-plane id="component3" position="30.51981 10.7087 -76.81983" src="Game/building_dock2.png" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
 </a-entity>
 
-<a-entity id="wall9">
-<a-plane id="component4" position="-49.25396 23.78246 -102.35533" src="Game/building7.png" rotation="0 90 0" scale="29.36089 47.69607 10" material="" geometry=""></a-plane>
-<a-plane id="component5" position="-49.25396 23.78246 -102.35533" src="Game/building7.png" rotation="0 90 0" scale="29.36089 47.69607 10" material="" geometry=""></a-plane>
+<a-plane id="wall1" position="30.51981 21.59174 -10.43437" src="Game/building1.png" rotation="0 -90 0" scale="40.30746 58.61684 10" material="" geometry=""></a-plane>
+<a-plane id="wall2" position="30.50467 19.99593 -44.8081" src="Game/building2.png" rotation="0 -90 0" scale="28.48481 39.71231 10" material="" geometry=""></a-plane>
+<a-plane id="wall3" position="30.50467 16.00164 37.58638" src="Game/building3.png" rotation="0 -90 0" scale="56.76725 32.34447 10" material="" geometry=""></a-plane>
+
+<!--***************************More buildings***************************************************-->
+<a-entity id="shops">
+<a-plane id="wall5" position="30.43609 7.04794 75.8726" src="Game/shop_front1.png" rotation="0 -90 0" scale="19.84219 13.94928 10" material="" geometry=""></a-plane>
+<a-plane id="wall6" position="30.5846 6.94908 98.70273" src="Game/garageHub.png" rotation="0 -90 0" scale="26.34849 13.7121 10" material="" geometry=""></a-plane>
 </a-entity>
 
-<a-entity id="wall10">
+</a-entity>
+          
+<!--***************************Grouped Buildings as an entity***************************************************-->
+
+<a-entity id="wall9">
+<a-plane id="component4" position="-49.25396 23.78246 -109.73162" src="Game/building7.png" rotation="0 90 0" scale="44.0378 47.69607 10" material="" geometry=""></a-plane>
+</a-entity>
+
+<a-entity id="wall10" position="0 0 -2.033">
 <a-plane id="component6" position="-49.44183 40.02401 -24.43607" src="Game/building9.png" rotation="0 90 0" scale="35.79963 26.77198 10" material="" geometry=""></a-plane>  
 <a-plane id="component7" position="-49.44183 66.30889 -24.43607" src="Game/building9.png" rotation="0 90 0" scale="35.79963 26.77198 10" material="" geometry=""></a-plane>
 <a-plane id="component8" position="-49.44183 13.57095 -24.43607" src="Game/building9.png" rotation="0 90 0" scale="35.79963 26.77198 10" material="" geometry=""></a-plane>
 </a-entity>
 
-<a-entity id="wall11">
+<a-entity id="wall11" scale="1 0.9 1.1" position="0 0 -9.55">
 <a-plane id="component9" position="-49.6969 39.98021 37.58638" src="Game/building4.png" rotation="0 90 0" scale="35.04374 26.67162 10" material="" geometry=""></a-plane>
 <a-plane id="componen10" position="-49.6969 13.30863 37.58638" src="Game/building4.png" rotation="0 90 0" scale="35.04374 26.67162 10" material="" geometry=""></a-plane>
 </a-entity>
 
-<a-entity id="wall12">
+<a-entity id="wall12" position="0 0 -2.055">
 <a-plane id="component11" position="-49.6969 40.06435 4.37784" src="Game/building10.png" rotation="0 90 0" scale="21.94109 26.67162 10" material="" geometry=""></a-plane>
 <a-plane id="component12" position="-49.65865 13.4233 4.37784" src="Game/building10.png" rotation="0 90 0" scale="21.94109 26.67162 10" material="" geometry=""></a-plane>
 </a-entity>
 
-<a-entity id="wall13">
+<a-entity id="wall13" position="0.432 0 -81.2">
 <a-plane id="component13" position="-49.6969 40.06435 4.37784" src="Game/building10.png" rotation="0 90 0" scale="21.94109 26.67162 10" material="" geometry=""></a-plane>
 <a-plane id="component14" position="-49.6969 13.4233 4.37784" src="Game/building10.png" rotation="0 90 0" scale="21.94109 26.67162 10" material="" geometry=""></a-plane>
 </a-entity>
-              <!--***************************More buildings***************************************************-->
-<a-entity id="shops">
-<a-plane id="wall5" position="30.43609 7.04794 75.8726" src="Game/shop_front1.png" rotation="0 -90 0" scale="19.84219 13.94928 10" material="" geometry=""></a-plane>
-<a-plane id="wall6" position="30.5846 6.94908 98.70273" src="Game/garageHub.png" rotation="0 -90 0" scale="26.34849 13.7121 10" material="" geometry=""></a-plane>
+
+<a-entity id="wall14" position="0.432 -26.36 -59.5">
+  <a-plane id="component15" position="-49.6969 67.18404 4.37784" src="Game/building11.png" rotation="0 90 0" scale="21.94109 26.67162 10" material="" geometry=""></a-plane>
+                                <!-- change later -->
+  <a-plane id="component16" position="-49.6969 40.06435 4.37784" src="Game/building12.png" rotation="0 90 0" scale="21.94109 26.67162 10" material="" geometry=""></a-plane>
 </a-entity>
+
+<a-plane id="wall16" position="-49.85988 21.34533 99.93793" src="Game/building_oldfirm.png" rotation="0 90 0" scale="25.39447 42.4018 10" material="" geometry=""></a-plane>
+
+<a-entity id="wall15" position="-19.266 0 -7.525" rotation="-180 0 -180">
+<a-plane id="component17" position="30.51981 31.54272 -76.81983" src="Game/building_dock2.png" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
+<a-plane id="component18" position="30.51981 52.24609 -76.85983" src="Game/building_dock2.png" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
+<a-plane id="component19" position="30.51981 10.7087 -76.81983" src="Game/building_dock2.png" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
+</a-entity>
+
                 <!--****************VVVVVV********3D MODELS VVVVVVVV***************************************************-->
+
                                         <!----------------TREES------------->
-<a-gltf-model id="tree1" src="Game/giant_low_poly_tree.glb" position="1 -1 6" scale="" gltf-model="Game/low_poly_tree.glb"></a-gltf-model>
+<a-gltf-model id="tree1" src="Game/giant_low_poly_tree.glb" position="-2.26733 -1.40685 83.35568" scale="1.33089 0.84249 0.96693" gltf-model="Game/low_poly_tree.glb"></a-gltf-model>
+<a-gltf-model id="tree2" src="Game/giant_low_poly_tree.glb" position="6.57889 -1 -103.76615" scale="1 0.87833 0.72017" gltf-model="Game/low_poly_tree.glb"></a-gltf-model>
 <a-gltf-model id="tree3" src="Game/giant_low_poly_tree.glb" position="1 -1 6" scale="" gltf-model="Game/low_poly_tree.glb"></a-gltf-model>
-<a-gltf-model id="tree4" src="Game/stylized_bush.glb" position="-12.49915 0.00953 -9.37821" scale="" gltf-model="Game/stylized_bush.glb"></a-gltf-model>
-<a-gltf-model id="tree5" src="Game/log.glb" position="-8.2267 0.48494 -4.48316" scale="" gltf-model="Game/log.glb"></a-gltf-model>
-                    <!-------------------------SIDEWALK GROUP------------------------>
+<a-gltf-model id="tree4" src="Game/giant_low_poly_tree.glb" position="-9.9601 -1.40685 -53.493" scale="1 0.78438 0.73378" gltf-model="Game/low_poly_tree.glb"></a-gltf-model>
+
+                                                    <!----------------2nd type------------->
+<a-gltf-model id="tree5" src="Game/lowpolytree2.glb" position="8.15916 -1.40685 -80.1246" scale="0.015 0.015 0.015" gltf-model="Game/lowpolytree2.glb"></a-gltf-model>
+<a-gltf-model id="tree6" src="Game/lowpolytree2.glb" position="8.53343 -2.73277 47.56844" scale="0.02 0.02 0.02" gltf-model="Game/lowpolytree2.glb"></a-gltf-model>
+<a-gltf-model id="tree7" src="Game/lowpolytree2.glb" position="-5.39569 -1.40685 -26.27091" scale="0.02 0.02 0.02" gltf-model="Game/lowpolytree2.glb"></a-gltf-model>
+
+                              <!--------------------------Roads------------------>
+<a-entity id="mainRoad1">
+<a-gltf-model id="road1" src="Game/road_straight.glb" position="-38.70479 0.36048 -98.95617" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road2" src="Game/road_straight.glb" position="-38.70479 0.36048 -62.684" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road3" src="Game/road_straight.glb" position="-38.70479 0.36048 -26.493" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road4" src="Game/road_straight.glb" position="-38.70479 0.36048 -9.86" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road5" src="Game/road_straight.glb" position="-38.70479 0.36048 26.296" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road6" src="Game/road_straight.glb" position="-38.70479 0.36048 62.567" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road7" src="Game/road_straight.glb" position="-38.70479 0.36048 98.839" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+</a-entity>
+
+<a-entity id="mainRoad2" position="76.193 0 0">
+<a-gltf-model id="road1" src="Game/road_straight.glb" position="-38.70479 0.36048 -98.95617" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road2" src="Game/road_straight.glb" position="-38.70479 0.36048 -62.684" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road3" src="Game/road_straight.glb" position="-38.70479 0.36048 -26.493" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road4" src="Game/road_straight.glb" position="-38.70479 0.36048 -9.86" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road5" src="Game/road_straight.glb" position="-38.70479 0.36048 26.296" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road6" src="Game/road_straight.glb" position="-38.70479 0.36048 62.567" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+<a-gltf-model id="road7" src="Game/road_straight.glb" position="-38.70479 0.36048 98.839" scale="0.37228 0.21548 -0.30374" gltf-model="Game/road_straight.glb"></a-gltf-model>
+</a-entity>
+
+                              <!--------------------------Fence------------------>
+<a-entity id="fenceLine1">
+<a-gltf-model id="fence1" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 -116.56254" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence2" src="Game/forest_fence_section.glb" position="-27.102 0.38109 -91.47723" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="0 -90 0"></a-gltf-model>
+<a-gltf-model id="fence3" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 -85.17863" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence4" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 -60.35937" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence5" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 -35.54011" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence6" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 -10.72085" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence7" src="Game/forest_fence_section.glb" position="-27.102 0.38109 14.48262" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="0 -90 0"></a-gltf-model>
+<a-gltf-model id="fence8" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 20.25239" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence9" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 45.07165" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence10" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 69.89091" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence11" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 94.92252" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="0 -90 0"></a-gltf-model>
+<a-gltf-model id="fence12" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 100.70623" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+</a-entity>
+
+<a-entity id="fenceLine2" position=" 0 0 6.022" rotation="-180 0 -180">
+<a-gltf-model id="fence1" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 -116.56254" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence2" src="Game/forest_fence_section.glb" position="-27.102 0.38109 -91.47723" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="0 -90 0"></a-gltf-model>
+<a-gltf-model id="fence3" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 -85.17863" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence4" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 -60.35937" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence5" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 -35.54011" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence6" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 -10.72085" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence7" src="Game/forest_fence_section.glb" position="-27.102 0.38109 14.48262" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="0 -90 0"></a-gltf-model>
+<a-gltf-model id="fence8" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 20.25239" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence9" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 45.07165" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence10" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 69.89091" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="fence11" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 94.92252" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="0 -90 0"></a-gltf-model>
+<a-gltf-model id="fence12" src="Game/forest_fence_section.glb" position="-27.10174 0.38109 100.70623" scale="3.16505 1.67695 2.90155" gltf-model="Game/forest_fence_section.glb" rotation="-179.9998479605043 -90 -179.9998479605043"></a-gltf-model>
+</a-entity>
+
+
+
+                                  <!--------------------------CAMERA------------------>
+<a-entity camera="" position="-34.71169556459647 3 -115.18339283533595" wasd-controls="" rotation="4.354479242994263 -168.5641833274875 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+                    <!-------------------------SIDEWALK GROUP------------------------
 <a-entity id="mainSidewalk">
 <a-gltf-model id="sidewalk1" src="Game/sidewalk.glb" position="25.81884 -0.40468 93.18316" scale="0.55038 1 1" gltf-model="Game/sidewalk.glb" rotation="-179.9998479605043 0 -179.9998479605043"></a-gltf-model>
-<a-gltf-model id="sidewalk2" src="Game/sidewalk.glb" position="25.84668 -0.405 -20.43148" scale="0.55 1 1" gltf-model="Game/sidewalk.glb" rotation="-179.9998479605043 0 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="sidewalk2" src="Game/sidewalk.glb" position="25.84668 -0.405 -77.76445" scale="0.55 1 1" gltf-model="Game/sidewalk.glb" rotation="-179.9998479605043 0 -179.9998479605043"></a-gltf-model>
 <a-gltf-model id="sidewalk3" src="Game/sidewalk.glb" position="1 -1 6" scale="" gltf-model="Game/sidewalk.glb"></a-gltf-model>
 <a-gltf-model id="sidewalk4" src="Game/sidewalk.glb" position="25.84668 -0.405 35.9396" scale="0.55 1 1" gltf-model="Game/sidewalk.glb" rotation="-179.9998479605043 0 -179.9998479605043"></a-gltf-model>
-</a-entity>
-
-<a-entity id="road">
-
-
-
-  
-</a-entity>
+<a-gltf-model id="sidewalk5" src="Game/sidewalk.glb" position="25.84668 -0.405 -20.43148" scale="0.55 1 1" gltf-model="Game/sidewalk.glb" rotation="-179.9998479605043 0 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="sidewalk6" src="Game/sidewalk.glb" position="25.84668 -0.405 -20.43148" scale="0.55 1 1" gltf-model="Game/sidewalk.glb" rotation="-179.9998479605043 0 -179.9998479605043"></a-gltf-model>
+<a-gltf-model id="sidewalk7" src="Game/sidewalk.glb" position="25.84668 -0.405 -20.43148" scale="0.55 1 1" gltf-model="Game/sidewalk.glb" rotation="-179.9998479605043 0 -179.9998479605043"></a-gltf-model>
+</a-entity> --> 
     
     </a-scene>
 </html>
