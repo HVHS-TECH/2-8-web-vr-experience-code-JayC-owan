@@ -1,11 +1,17 @@
-const open = documentGetElementById(open)
-const modal_container = documentGetElementById(modalContainer)
-const close = documentGetElementById(close)
+const modal = document.getElementById("popUpModal");
+const button = document.getElementById("openModal");
+const span = document.querySelector(".close-button");
 
-open.addEventListener('click',() =>{
-    modal_container.classList.add('show')
-})
+button.onclick = function() {
+  modal.style.display = "block";
+}
 
-close.addEventListener('click',() =>{
-    modal_container.classList.add('show')
-})
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(openModal) {
+  if (openModal.target == modal) {
+    modal.style.display = "none";
+  }
+}
