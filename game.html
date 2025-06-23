@@ -17,6 +17,14 @@
   </head>
   <body>
     <a-scene physics="gravity:9.8; restitution:0.1" inspector-plugin-recast>
+
+      <!------------------PRELOAD ASSETS HERE----------->
+      <a-assets timeout="100000">
+<img id="wall4" src="Game/building_dock2.png"></img>
+ 
+      </a-assets>
+
+                  <!--Sky-->
       <a-sky src="Game/sky.jpeg"></a-sky>
 
                 <!--***************************CAMERA RIG***************************************************-->
@@ -33,9 +41,9 @@
 <a-entity id="wallSide1" position="18.1">
 
 <a-entity id="wall4">
-<a-plane id="component1" position="30.51981 31.54272 -76.81983" src="Game/building_dock2.png" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
-<a-plane id="component2" position="30.51981 52.24609 -76.85983" src="Game/building_dock2.png" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
-<a-plane id="component3" position="30.51981 10.7087 -76.81983" src="Game/building_dock2.png" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
+<a-plane id="component1" position="30.51981 31.54272 -76.81983" src="#wall4" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
+<a-plane id="component2" position="30.51981 52.24609 -76.85983" src="#wall4" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
+<a-plane id="component3" position="30.51981 10.7087 -76.81983" src="#wall4" rotation="0 -90 0" scale="36.70858 21.04857 10" material="" geometry=""></a-plane>
 </a-entity>
 
 <a-plane id="wall1" position="30.51981 21.59174 -10.43437" src="Game/building1.png" rotation="0 -90 0" scale="40.30746 58.61684 10" material="" geometry=""></a-plane>
@@ -160,6 +168,12 @@
                                                             <!--Bench----->
 <a-gltf-model id="bench1" src="Game/bench.glb" position="-17.72329 0.8308 75.07129" scale="2.83452 1.7905 2.58181" gltf-model="Game/bench.glb" rotation="-180 -90 -179.9998479605043"></a-gltf-model>                     
 <a-gltf-model id="bench2" src="Game/bench.glb" position="17.34395 0.8308 -36.51536" scale="2.83452 1.7905 2.58181" gltf-model="Game/bench.glb" rotation="-180 -90 -179.9998479605043"></a-gltf-model>
+
+                                                              <!--Bushes----->
+<a-gltf-model id="bush1" src="Game/bush.glb" position="-17.72329 0.8308 75.07129" scale="2.83452 1.7905 2.58181" gltf-model="Game/bush.glb" rotation="-180 -90 -179.9998479605043"></a-gltf-model>                     
+<a-gltf-model id="bush2" src="Game/bush.glb" position="-17.72329 0.8308 75.07129" scale="2.83452 1.7905 2.58181" gltf-model="Game/bush.glb" rotation="-180 -90 -179.9998479605043"></a-gltf-model>                     
+<a-gltf-model id="bush3" src="Game/bush.glb" position="-17.72329 0.8308 75.07129" scale="2.83452 1.7905 2.58181" gltf-model="Game/bush.glb" rotation="-180 -90 -179.9998479605043"></a-gltf-model>                     
+<a-gltf-model id="bush4" src="Game/bush.glb" position="-17.72329 0.8308 75.07129" scale="2.83452 1.7905 2.58181" gltf-model="Game/bush.glb" rotation="-180 -90 -179.9998479605043"></a-gltf-model>                     
 
                                   <!--------------------------CAMERA------------------>
 <a-entity camera="" position="-34.71169556459647 3 -115.18339283533595" wasd-controls="" rotation="4.354479242994263 -168.5641833274875 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
